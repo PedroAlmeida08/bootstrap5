@@ -62,25 +62,64 @@
     </div>
   </nav>
 
-  <!-- main image & intro text -->
-  <section id="intro">
+  <section id="contact">
     <div class="container-lg">
-      <div class="row g-4 justify-content-center align-items-center">
-        <div class="col-md-5 text-center text-md-start">
-          <h1>
-            <div class="display-2">Olá!</div>
-            <div class="display-5 text-muted">Tudo bem?</div>
-          </h1>
-          <p class="lead my-4 text-muted">Me chamo João! </br>
-            Apaixonado por tecnologia desde a infância. </br>
-            Graduando em Ciência da Computação pela UFF. </br>
-            Deseja saber mais?
-            Continue navegando!</p>
-          <a href="projects.html" class="btn btn-primary btn-lg text-white">Explorar</a>
-          <!-- open sidebar / offcanvas -->
-        </div>
-        <div class="col-md-5 text-center d-none d-md-block">
-          <img src="assets/hello-world.png.webp" class="img-fluid" alt="ebook">
+      
+      <div class="text-center">
+        <h2>Entre em contato comigo</h2>
+        <p class="lead">Quer tirar sua ideia do papel? Preencha o formulário e assim que possível irei te responder!</p>
+      </div>
+
+      <div class="row justify-content-center my-5">
+        <div class="col-lg-6"> 
+          <form>
+            <label for="email" class="form-label">Email:</label>
+            <div class="input-group mb-4">
+              <span class="input-group-text">
+                <i class="bi bi-envelope-fill text-secondary"></i>
+              </span>
+              <input type="text" id="email" class="form-control" placeholder="ex: joao@exemplo.com" />
+              <!-- tooltip -->
+              <span class="input-group-text">
+                <span class="tt" data-bs-placement="bottom" title="Escolha um email que você tenha acesso.">
+                  <i class="bi bi-question-circle text-muted"></i>
+                </span>
+              </span>
+            </div>
+            <label for="name" class="form-label">Nome Completo:</label>
+            <div class="mb-4 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-person-fill text-secondary"></i>
+              </span>
+              <input type="text" id="name" class="form-control" placeholder="ex: João" />
+              <!-- tooltip -->
+              <span class="input-group-text">
+                <span class="tt" data-bs-placement="bottom" title="Seu nome completo facilita sua identificação.">
+                  <i class="bi bi-question-circle text-muted"></i>
+                </span>
+              </span>
+            </div>
+            <label for="subject" class="form-label">Sobre o que você deseja falar?</label>
+            <div class="mb-4 input-group">
+              <span class="input-group-text">
+                <i class="bi bi-chat-right-dots-fill text-secondary"></i>
+              </span>
+              <select class="form-select" id="subject">
+                <option value="pricing" selected>Preciso de ajuda para criar um novo projeto</option>
+                <option value="content">Tenho um projeto e desejo tirar meu projeto do papel</option>
+                <option value="other">Orçamento</option>
+                <option value="other">Manutenção</option>
+                <option value="other">Outro assunto</option>
+              </select>
+            </div>
+            <div class="mb-4 mt-5 form-floating">
+              <textarea class="form-control" id="query" style="height: 140px" placeholder="query"></textarea>
+              <label for="query">Escreva aqui ...</label>
+            </div>
+            <div class="mb-4 text-center">
+              <button type="submit" class="btn btn-secondary">Enviar</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>

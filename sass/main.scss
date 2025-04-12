@@ -1,6 +1,10 @@
 // custom variable values
-$primary: #c29938;
+$primary: #2596be;
 $light: #fbf5e5;
+$black: #252527;
+$navbar-light-color: $light;
+$navbar-light-toggler-border-color: rgba($light, 155);
+
 
 // import the functions & variables
 @import "../node_modules/bootstrap/scss/_functions";
